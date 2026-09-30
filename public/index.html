@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondoñedo Accesible - Guía Inclusiva e Roteiros</title>
+  <meta name="description" content="Mapa de accesibilidade e itinerario recomendado para percorrer Mondoñedo adaptado a persoas con mobilidade reducida.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS Local (Sen dependencias externas de CDN) -->
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Sidebar / Panel de Control -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand">
+          <div class="brand-icon">♿</div>
+          <div>
+            <h1>Mondoñedo Accesible</h1>
+            <p class="subtitle">Guía de Turismo Inclusivo &bull; OSM</p>
+          </div>
+        </div>
+        <button id="btn-close-sidebar" class="icon-button mobile-only" aria-label="Pechar panel">✕</button>
+      </div>
+
+      <!-- Barra de Estado do Modo de Edición -->
+      <div id="edit-mode-bar" class="edit-mode-bar" style="display: none;">
+        <div class="edit-bar-header">
+          <span class="edit-indicator">🛠️ <strong>Modo Edición Activado</strong></span>
+          <span class="badge badge-yes">Admin</span>
+        </div>
+        <div class="edit-bar-actions">
+          <button id="btn-add-poi-mode" class="btn-tool-edit" title="Preme no mapa para engadir novo punto">
+            ➕ Novo POI
+          </button>
+          <button id="btn-add-route-mode" class="btn-tool-edit" title="Preme no mapa para trazar un novo roteiro">
+            📐 Novo Treito
+          </button>
+          <button id="btn-open-osm-tab" class="btn-tool-edit" title="Controlar visibilidade e categorías dos postos de OSM">
+            🏬 Postos OSM (<span id="osm-badge-active">0</span>)
+          </button>
+          <button id="btn-save-server" class="btn-tool-save" title="Gardar todos os cambios no servidor">
+            💾 Gardar
+          </button>
+        </div>
+      </div>
+
+      <div id="readonly-mode-bar" class="readonly-mode-bar">
+        <span class="lock-icon">🔒</span>
+        <span>Modo Seguro de Só Lectura</span>
+      </div>
+
+      <!-- Barra de Procurar -->
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="poi-search" placeholder="Buscar monumento, bar, banco, treito..." aria-label="Buscar punto de interese">
+        <button id="clear-search" class="clear-btn" style="display: none;">✕</button>
+      </div>
+
+      <!-- Barra de Accesibilidade Visual -->
+      <div class="a11y-toolbar">
+        <span class="a11y-label">Visión:</span>
+        <button id="btn-high-contrast" class="btn-tool" title="Activar/Desactivar Alto Contraste">🌓 Contraste</button>
+        <button id="btn-font-plus" class="btn-tool" title="Aumentar tamaño de letra">A+</button>
+        <button id="btn-font-minus" class="btn-tool" title="Diminuír tamaño de letra">A-</button>
+      </div>
+
+      <!-- Navegación por Pestanas -->
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="tab-itinerario">🚶 Roteiros</button>
+        <button class="tab-btn" data-tab="tab-zonas">🗺️ POIs Oficiais</button>
+        <button class="tab-btn" data-tab="tab-osm">🏬 Postos OSM</button>
+        <button class="tab-btn" data-tab="tab-custom-route">🧭 Roteiro</button>
+      </div>
+
+      <!-- Pestana 1: ITINERARIO E TREITOS SUGERIDOS -->
+      <div id="tab-itinerario" class="tab-content active">
+        <div class="itinerary-header-card">
+          <h2>🚶‍♂️ Traxectos e Recomendacións</h2>
+          <p>Consulta os percorrridos recomendados para mobilidade reducida (vía nova rampla) e os treitos perigosos con escadas a evitar.</p>
+          <div class="itinerary-actions-row">
+            <button id="btn-toggle-official-route" class="btn-action-primary">
+              🗺️ Mostrar/Ocultar Liñas no Mapa
+            </button>
+          </div>
+        </div>
+
+        <!-- Filtros Rápidos de Treitos -->
+        <div class="route-filter-chips">
+          <button class="route-chip active" data-filter="all">Todos os treitos</button>
+          <button class="route-chip chip-green" data-filter="optimo">🟢 Recomendados</button>
+          <button class="route-chip chip-yellow" data-filter="precaucion">🟡 Con Precaución</button>
+          <button class="route-chip chip-red" data-filter="evitar">🔴 A Evitar</button>
+        </div>
+
+        <!-- Contedor dinámico de etapas do itinerario -->
+        <div id="itinerary-steps-container" class="itinerary-steps">
+          <!-- Renderizado dinámico con JS -->
+        </div>
+      </div>
+
+      <!-- Pestana 2: CONTROL GRANULAR DE POIs -->
+      <div id="tab-zonas" class="tab-content">
+        
+        <!-- Control de Visualización no Mapa -->
+        <div class="filter-section">
+          <div class="filter-section-title-row">
+            <h3>Visibilidade de Zonas</h3>
+            <button id="btn-select-all-zones" class="btn-link-action">Marcar todas</button>
+          </div>
+          <div class="zone-checkbox-list">
+            <label class="checkbox-item-custom check-zone-green">
+              <input type="checkbox" id="chk-zone-green" checked>
+              <span class="chk-label">🟢 Zona Baixa e Accesible (<span id="count-zone-green">0</span>)</span>
+            </label>
+            <label class="checkbox-item-custom check-zone-yellow">
+              <input type="checkbox" id="chk-zone-yellow" checked>
+              <span class="chk-label">🟡 Casco Monumental / Parcial (<span id="count-zone-yellow">0</span>)</span>
+            </label>
+            <label class="checkbox-item-custom check-zone-red">
+              <input type="checkbox" id="chk-zone-red" checked>
+              <span class="chk-label">🔴 Puntos Non Recomendados (<span id="count-zone-red">0</span>)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Filtro Granular por Categorías de POIs -->
+        <div class="filter-section">
+          <div class="filter-section-title-row">
+            <h3>Categorías de POIs</h3>
+            <button id="btn-select-all-cats" class="btn-link-action">Marcar todas</button>
+          </div>
+          <div class="categories-grid" id="categories-filter-container">
+            <label class="category-toggle-item">
+              <input type="checkbox" class="cat-filter-checkbox" value="monumento" checked>
+              <span>⛪ Monumentos</span>
+            </label>
+            <label class="category-toggle-item">
+              <input type="checkbox" class="cat-filter-checkbox" value="espazo_publico" checked>
+              <span>🏞️ Prazas e Alamedas</span>
+            </label>
+            <label class="category-toggle-item">
+              <input type="checkbox" class="cat-filter-checkbox" value="patrimonio" checked>
+              <span>🏛️ Patrimonio</span>
+            </label>
+            <label class="category-toggle-item">
+              <input type="checkbox" class="cat-filter-checkbox" value="cultura" checked>
+              <span>📚 Cultura e Museos</span>
+            </label>
+            <label class="category-toggle-item">
+              <input type="checkbox" class="cat-filter-checkbox" value="servizos" checked>
+              <span>🏢 Servizos e Concello</span>
+            </label>
+            <label class="category-toggle-item">
+              <input type="checkbox" class="cat-filter-checkbox" value="transporte" checked>
+              <span>🅿️ Prazas PMR</span>
+            </label>
+            <label class="category-toggle-item">
+              <input type="checkbox" class="cat-filter-checkbox" value="natureza" checked>
+              <span>🌲 Rutas Naturais</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Filtros Rápidos de Equipamentos e Etiquetas -->
+        <div class="filter-section">
+          <h3>Equipamentos e Etiquetas</h3>
+          <div class="checkbox-group">
+            <label class="checkbox-item">
+              <input type="checkbox" id="filter-wc">
+              <span>🚻 Só lugares con Baño adaptado</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" id="filter-parking">
+              <span>🅿️ Só lugares con Aparcadoiro PMR</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" id="filter-show-labels">
+              <span>🏷️ Mostrar sempre nomes no mapa</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Listaxe de Puntos Filtrados -->
+        <div class="pois-list-section">
+          <div class="pois-list-header">
+            <h3>Lugares visibles no mapa (<span id="poi-count">0</span>)</h3>
+          </div>
+          <div id="pois-list" class="pois-list">
+            <!-- Renderizado dinámico -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pestana 3: XESTOR E CONTROL DE POSTOS DE OPENSTREETMAP (OSM) -->
+      <div id="tab-osm" class="tab-content">
+        <div class="osm-header-card">
+          <h2>🏬 Postos de OpenStreetMap</h2>
+          <p>Controla a visibilidade e categorías dos comercios, bares, bancos e servizos importados de OSM para evitar saturar o mapa.</p>
+          
+          <div class="osm-master-switch">
+            <span>👁️ Mostrar Postos de OSM no Mapa</span>
+            <label class="switch-toggle">
+              <input type="checkbox" id="chk-osm-master" checked>
+              <span class="slider-round"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Categorías de OSM con filtros e accións por lote -->
+        <div class="filter-section">
+          <div class="filter-section-title-row">
+            <h3>Categorías de Postos OSM</h3>
+            <div class="osm-cat-actions-row">
+              <button id="btn-osm-all-on" class="btn-link-action">Activar todas</button>
+              <span>&bull;</span>
+              <button id="btn-osm-all-off" class="btn-link-action" style="color:#b91c1c;">Desactivar todas</button>
+            </div>
+          </div>
+
+          <div class="osm-category-list" id="osm-categories-container">
+            <label class="osm-category-item">
+              <div class="osm-category-left">
+                <input type="checkbox" class="chk-osm-cat" value="hostaleria" checked>
+                <span>🍽️ Hostalaría e Bares</span>
+              </div>
+              <span class="osm-category-count" id="count-osm-hostaleria">0</span>
+            </label>
+
+            <label class="osm-category-item">
+              <div class="osm-category-left">
+                <input type="checkbox" class="chk-osm-cat" value="comercio" checked>
+                <span>🛍️ Comercios e Tendas</span>
+              </div>
+              <span class="osm-category-count" id="count-osm-comercio">0</span>
+            </label>
+
+            <label class="osm-category-item">
+              <div class="osm-category-left">
+                <input type="checkbox" class="chk-osm-cat" value="finanzas" checked>
+                <span>🏦 Finanzas e Bancos</span>
+              </div>
+              <span class="osm-category-count" id="count-osm-finanzas">0</span>
+            </label>
+
+            <label class="osm-category-item">
+              <div class="osm-category-left">
+                <input type="checkbox" class="chk-osm-cat" value="sanidade" checked>
+                <span>💊 Saúde e Farmacias</span>
+              </div>
+              <span class="osm-category-count" id="count-osm-sanidade">0</span>
+            </label>
+
+            <label class="osm-category-item">
+              <div class="osm-category-left">
+                <input type="checkbox" class="chk-osm-cat" value="aloxamento" checked>
+                <span>🛏️ Hoteis e Aloxamento</span>
+              </div>
+              <span class="osm-category-count" id="count-osm-aloxamento">0</span>
+            </label>
+
+            <label class="osm-category-item">
+              <div class="osm-category-left">
+                <input type="checkbox" class="chk-osm-cat" value="outros" checked>
+                <span>🏛️ Outros / Patrimonio</span>
+              </div>
+              <span class="osm-category-count" id="count-osm-outros">0</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Barra de Estado e Listaxe de Postos OSM -->
+        <div class="pois-list-section">
+          <div class="pois-list-header" style="margin-bottom: 6px;">
+            <h3>Postos no mapa (<span id="osm-visible-count">0</span> / <span id="osm-total-count">0</span>)</h3>
+          </div>
+
+          <!-- Filtro de Estado Rápido -->
+          <div class="osm-filter-bar">
+            <button class="osm-filter-btn active" data-filter="all">Todos</button>
+            <button class="osm-filter-btn" data-filter="visible">👁️ Visibles</button>
+            <button class="osm-filter-btn" data-filter="hidden">🚫 Ocultos</button>
+          </div>
+
+          <!-- Contedor dinámico de postos OSM -->
+          <div id="osm-pois-list" class="pois-list">
+            <!-- Renderizado con JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Pestana 4: ROTEIRO INTELIXENTE ADAPTADO -->
+      <div id="tab-custom-route" class="tab-content">
+        <div class="routing-section">
+          <h3>Calculadora de Roteiro Accesible</h3>
+          <p class="section-desc">
+            Calcula o camiño priorizando a <strong>rede accesible verificada (nova rampla)</strong> e evitando escadas e pendentes excesivas.
+          </p>
+          
+          <div class="route-field">
+            <label for="route-origin">Orixe (Punto A):</label>
+            <select id="route-origin" class="select-input">
+              <option value="">Selecciona orixe...</option>
+            </select>
+          </div>
+
+          <div class="route-field">
+            <label for="route-destination">Destino (Punto B):</label>
+            <select id="route-destination" class="select-input">
+              <option value="">Selecciona destino...</option>
+            </select>
+          </div>
+
+          <div class="routing-mode-options">
+            <label class="routing-radio">
+              <input type="radio" name="routing-engine-type" value="verified_accessible" checked>
+              <span>♿ <strong>Priorizar Rede Accesible Verificada</strong> (Usa nova rampla e evita escadas)</span>
+            </label>
+            <label class="routing-radio">
+              <input type="radio" name="routing-engine-type" value="generic_osrm">
+              <span>🚶 Cálculo OSM estándar</span>
+            </label>
+          </div>
+
+          <button id="btn-calculate-route" class="btn-primary">🚶‍♂️ Calcular Roteiro Óptimo</button>
+          <button id="btn-clear-route" class="btn-secondary" style="display: none;">Limpar Roteiro</button>
+
+          <div id="route-results" class="route-results" style="display: none;">
+            <div id="route-badge-container"></div>
+            <div class="route-stat-card">
+              <div class="stat-item">
+                <span class="stat-label">Distancia:</span>
+                <span id="route-dist" class="stat-value">-- m</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Tempo estimado PMR:</span>
+                <span id="route-time" class="stat-value">-- min</span>
+              </div>
+            </div>
+            <div id="route-warnings" class="route-warnings"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer do Sidebar -->
+      <div class="sidebar-footer">
+        <small>Mondoñedo Accesible &bull; OpenStreetMap &bull; Turismo Inclusivo</small>
+      </div>
+    </aside>
+
+    <!-- Área principal do Mapa -->
+    <main class="map-wrapper">
+      
+      <button id="btn-toggle-sidebar" class="mobile-toggle-btn" aria-label="Abrir menú">
+        ☰ Roteiros e Puntos
+      </button>
+
+      <!-- Panel Flotante de Deseño de Rotas (Modo Creación) -->
+      <div id="drawing-toolbar" class="drawing-toolbar" style="display: none;">
+        <span class="drawing-msg">📐 <strong>Deseñando Novo Treito:</strong> Preme no mapa para engadir puntos (<span id="drawing-point-count">0</span> puntos).</span>
+        <div class="drawing-actions">
+          <button id="btn-finish-drawing" class="btn-draw-finish">✅ Rematar e Configurar</button>
+          <button id="btn-cancel-drawing" class="btn-draw-cancel">✕ Cancelar</button>
+        </div>
+      </div>
+
+      <!-- Panel Flotante de Edición de Vértices dun Treito Existente -->
+      <div id="vertex-toolbar" class="drawing-toolbar vertex-toolbar" style="display: none;">
+        <span class="drawing-msg">
+          📐 <strong>Editando Trazado:</strong> <span id="vertex-route-name">Treito</span><br>
+          <small>• <strong>Mover:</strong> Arrastra os puntos 🔵 • <strong>Engadir:</strong> Clica nos ⚪ • <strong>Eliminar:</strong> Clica nun 🔵</small>
+        </span>
+        <div class="drawing-actions">
+          <button id="btn-finish-vertex-edit" class="btn-draw-finish">✅ Gardar Trazado</button>
+          <button id="btn-cancel-vertex-edit" class="btn-draw-cancel">✕ Desbotar</button>
+        </div>
+      </div>
+
+      <!-- Botóns de acción rápida flotantes -->
+      <div class="map-floating-actions">
+        <button id="btn-locate-me" class="map-action-btn" title="A miña situación GPS">
+          📍
+        </button>
+        <button id="btn-show-itinerary" class="map-action-btn active" title="Ver Itinerario Completo">
+          🚶
+        </button>
+        <button id="btn-reset-view" class="map-action-btn" title="Centrar en Mondoñedo">
+          🏠
+        </button>
+      </div>
+
+      <!-- Notificacións Toast -->
+      <div id="toast-container" class="toast-container"></div>
+
+      <!-- Lenda de cores no mapa -->
+      <div class="map-legend">
+        <div class="legend-title">Guía de Accesibilidade</div>
+        <div class="legend-item"><span class="legend-color legend-green"></span> 🟢 Recomendado (Nova rampla)</div>
+        <div class="legend-item"><span class="legend-color legend-yellow"></span> 🟡 Precaución / Empedrado</div>
+        <div class="legend-item"><span class="legend-color legend-red"></span> 🔴 A Evitar (Escadas / Inaccesible)</div>
+      </div>
+
+      <!-- Contedor do Leaflet Map -->
+      <div id="map"></div>
+    </main>
+
+  </div>
+
+  <!-- Modal / Formulario de Edición de POI -->
+  <div id="poi-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-title">✏️ Editar Punto de Interese</h3>
+        <button id="btn-close-modal" class="modal-close-btn">✕</button>
+      </div>
+      <form id="poi-form" class="modal-body">
+        <input type="hidden" id="edit-poi-id">
+        <input type="hidden" id="edit-poi-lng">
+        <input type="hidden" id="edit-poi-lat">
+
+        <div class="form-row">
+          <label for="edit-poi-nome">Nome do Lugar *</label>
+          <input type="text" id="edit-poi-nome" required class="form-control" placeholder="Ex: Museo Diocesano">
+        </div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="edit-poi-zona">Zona de Accesibilidade *</label>
+            <select id="edit-poi-zona" class="form-control" required>
+              <option value="verde">🟢 Zona Baixa e Accesible</option>
+              <option value="amarelo">🟡 Casco Monumental (Parcial)</option>
+              <option value="vermello">🔴 Non Recomendado para PMR</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="edit-poi-cat">Categoría *</label>
+            <select id="edit-poi-cat" class="form-control" required>
+              <option value="monumento">Monumento / Relixioso</option>
+              <option value="espazo_publico">Espazo Público / Praza</option>
+              <option value="patrimonio">Patrimonio Histórico</option>
+              <option value="cultura">Cultura / Museo</option>
+              <option value="servizos">Servizos / Concello</option>
+              <option value="transporte">Transporte / Aparcadoiro</option>
+              <option value="sanidade">Sanidade / Saúde</option>
+              <option value="natureza">Natureza / Sendeiro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="edit-poi-desc">Descrición do Acceso e Espazo *</label>
+          <textarea id="edit-poi-desc" class="form-control" rows="3" required placeholder="Detalle das condicións de entrada, chan, etc."></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="edit-poi-recom">Recomendación / Pauta Accesible</label>
+          <input type="text" id="edit-poi-recom" class="form-control" placeholder="Ex: Acceso con axuda pola rampla lateral.">
+        </div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="edit-poi-piso">Tipo de Pavimento</label>
+            <input type="text" id="edit-poi-piso" class="form-control" placeholder="Ex: Lousa de pedra lisa">
+          </div>
+
+          <div class="form-row">
+            <label for="edit-poi-pendente">Pendente / Inclinación</label>
+            <input type="text" id="edit-poi-pendente" class="form-control" placeholder="Ex: Plano (< 2%)">
+          </div>
+        </div>
+
+        <div class="form-row checkbox-inline-group">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="edit-poi-wc">
+            <span>🚻 Baño adaptado</span>
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="edit-poi-parking">
+            <span>🅿️ Prazas PMR</span>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label for="edit-poi-horario">Horario / Acceso</label>
+          <input type="text" id="edit-poi-horario" class="form-control" placeholder="Ex: 10:00 - 19:30">
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="btn-delete-poi" class="btn-danger" style="display: none;">🗑️ Eliminar</button>
+          <div class="modal-footer-right">
+            <button type="button" id="btn-cancel-modal" class="btn-secondary">Cancelar</button>
+            <button type="submit" class="btn-primary">💾 Gardar Punto</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal / Formulario de Edición de TRAXECTO / ROTA -->
+  <div id="route-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="route-modal-title">📐 Configurar Treito de Rota</h3>
+        <button id="btn-close-route-modal" class="modal-close-btn">✕</button>
+      </div>
+      <form id="route-form" class="modal-body">
+        <input type="hidden" id="edit-route-id">
+        <input type="hidden" id="edit-route-coords">
+
+        <div class="form-row">
+          <label for="edit-route-titulo">Título do Treito / Rota *</label>
+          <input type="text" id="edit-route-titulo" required class="form-control" placeholder="Ex: Eixe Central da Alameda á Catedral (Nova Rampla)">
+        </div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="edit-route-tipo">Clasificación de Accesibilidade *</label>
+            <select id="edit-route-tipo" class="form-control" required>
+              <option value="optimo">🟢 Recomendado / Totalmente Accesible (Rampla)</option>
+              <option value="precaucion">🟡 Con Precaución (Empedrado / Pendente suave)</option>
+              <option value="evitar">🔴 NON RECOMENDADO / A EVITAR (Escadas / Pendente extrema)</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="edit-route-cor">Cor da Liña</label>
+            <select id="edit-route-cor" class="form-control">
+              <option value="#16a34a">Verde (#16a34a)</option>
+              <option value="#2563eb">Azul (#2563eb)</option>
+              <option value="#d97706">Laranxa / Amarelo (#d97706)</option>
+              <option value="#dc2626">Vermello (#dc2626)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="edit-route-desc">Descrición do Percorrido *</label>
+          <textarea id="edit-route-desc" class="form-control" rows="3" required placeholder="Explicación do traxecto, vía da rampla adaptada, etc."></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="edit-route-recom">Recomendación ou Motivo de Evitar *</label>
+          <textarea id="edit-route-recom" class="form-control" rows="2" required placeholder="Ex: Roteiro accesible con nova rampla. Evita o atallo con escadas."></textarea>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="edit-route-pavimento">Tipo de Pavimento</label>
+            <input type="text" id="edit-route-pavimento" class="form-control" placeholder="Ex: Lousa continua, Rampla pulida">
+          </div>
+
+          <div class="form-row">
+            <label for="edit-route-pendente">Pendente Estimada</label>
+            <input type="text" id="edit-route-pendente" class="form-control" placeholder="Ex: Rampla accesible (< 6%)">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="btn-delete-route" class="btn-danger" style="display: none;">🗑️ Eliminar Treito</button>
+          <div class="modal-footer-right">
+            <button type="button" id="btn-cancel-route-modal" class="btn-secondary">Cancelar</button>
+            <button type="submit" class="btn-primary">💾 Gardar Treito</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal / Formulario de Edición de POSTO OSM -->
+  <div id="osm-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="osm-modal-title">✏️ Configurar Posto de OpenStreetMap</h3>
+        <button id="btn-close-osm-modal" class="modal-close-btn">✕</button>
+      </div>
+      <form id="osm-poi-form" class="modal-body">
+        <input type="hidden" id="edit-osm-id">
+
+        <div class="form-row">
+          <label for="edit-osm-nome">Nome do Establecemento / Posto *</label>
+          <input type="text" id="edit-osm-nome" required class="form-control" placeholder="Ex: O Petisco">
+        </div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="edit-osm-cat">Categoría *</label>
+            <select id="edit-osm-cat" class="form-control" required>
+              <option value="hostaleria">🍽️ Hostalaría / Bares / Restaurantes</option>
+              <option value="comercio">🛍️ Comercios / Tendas / Alimentación</option>
+              <option value="finanzas">🏦 Finanzas / Bancos / Caixeiros</option>
+              <option value="sanidade">💊 Sanidade / Farmacias / Ópticas</option>
+              <option value="aloxamento">🛏️ Aloxamento / Hoteis / Pensións</option>
+              <option value="outros">🏛️ Outros / Servizos</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="edit-osm-wheelchair">Accesibilidade en Cadeira de Rodas</label>
+            <select id="edit-osm-wheelchair" class="form-control">
+              <option value="yes">🟢 Accesible (yes)</option>
+              <option value="limited">🟡 Acceso Parcial / con axuda (limited)</option>
+              <option value="no">🔴 Inaccesible / Escadas (no)</option>
+              <option value="unknown">⚪ Sen verificar / Descoñecido</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="edit-osm-desc">Descrición ou Notas</label>
+          <textarea id="edit-osm-desc" class="form-control" rows="2" placeholder="Notas sobre o acceso, rampla na entrada, chan, etc."></textarea>
+        </div>
+
+        <div class="form-row checkbox-inline-group" style="background:#f1f5f9; padding:8px 12px; border-radius:6px; margin-top:4px;">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="edit-osm-visible" checked>
+            <span>👁️ <strong>Visible no Mapa</strong></span>
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="edit-osm-wc">
+            <span>🚻 Baño adaptado</span>
+          </label>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="btn-promote-from-modal" class="btn-tool-edit btn-osm-promote">⭐ Converter a POI Oficial</button>
+          <div class="modal-footer-right">
+            <button type="button" id="btn-cancel-osm-modal" class="btn-secondary">Cancelar</button>
+            <button type="submit" class="btn-primary">💾 Aplicar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Leaflet JS Local (100% Offline / Local) -->
+  <script src="vendor/leaflet/leaflet.js"></script>
+  
+  <script src="app.js"></script>
+</body>
+</html>

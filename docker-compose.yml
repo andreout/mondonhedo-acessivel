@@ -1,0 +1,16 @@
+services:
+  mondonhedo-acessivel:
+    image: python:3.11-alpine
+    container_name: mondonhedo_acessivel
+    restart: unless-stopped
+    ports:
+      - "90:8000"
+    environment:
+      # ⚠️ SEGURIDADE: Poña ENABLE_EDIT_MODE a "false" en produción para bloquear calquera modificación
+      - ENABLE_EDIT_MODE=true
+      - PORT=8000
+    volumes:
+      - ./public:/app/public
+      - ./server.py:/app/server.py:ro
+    working_dir: /app
+    command: python3 server.py

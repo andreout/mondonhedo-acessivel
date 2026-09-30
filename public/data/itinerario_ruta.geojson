@@ -1,0 +1,659 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "etapa_alameda",
+        "etapa": 1,
+        "titulo": "1. Alameda de Os Remedios (Inicio e Aparcadoiro)",
+        "tipo": "optimo",
+        "cor": "#16a34a",
+        "estilo_lina": "solida",
+        "desc": "Espazo totalmente plano e aberto con prazas PMR. Punto óptimo para iniciar a visita en cadeira de rodas.",
+        "recomendacion": "Punto de inicio recomendado. Estacione nas prazas reservadas da Alameda.",
+        "pavimento": "Asfalto pulido e terra compactada",
+        "pendente": "Plano (< 2%)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -7.3691819,
+            43.428787
+          ],
+          [
+            -7.3691118,
+            43.4286782
+          ],
+          [
+            -7.3699272,
+            43.4284133
+          ],
+          [
+            -7.3697716,
+            43.4281932
+          ],
+          [
+            -7.3684037,
+            43.4284134
+          ],
+          [
+            -7.3670682,
+            43.4286276
+          ],
+          [
+            -7.3668185,
+            43.4286704
+          ],
+          [
+            -7.3665672,
+            43.4287469
+          ],
+          [
+            -7.3662525,
+            43.4288438
+          ],
+          [
+            -7.3659281,
+            43.4289723
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "etapa_eixe_central",
+        "titulo": "2. Eixe Central (Alameda cara á Praza da Catedral)",
+        "tipo": "precaucion",
+        "cor": "#d97706",
+        "estilo_lina": "tracos",
+        "desc": "Percorrido pola rúa principal peonil consolidada ata a Praza da Catedral. Pavimento firme con zonas de empedrado tradicional.",
+        "recomendacion": "Rúa de tránsito cómodo, aínda que as xuntas do empedrado poden causar lixeira vibración.",
+        "pavimento": "Lousa e empedrado urbano",
+        "pendente": "Suave (2-3%)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -7.3659233,
+            43.4289741
+          ],
+          [
+            -7.3657168,
+            43.4290498
+          ],
+          [
+            -7.3655183,
+            43.429136
+          ],
+          [
+            -7.3652027,
+            43.4292811
+          ],
+          [
+            -7.3646299,
+            43.4296364
+          ],
+          [
+            -7.36419,
+            43.4294009
+          ],
+          [
+            -7.364029,
+            43.4293112
+          ],
+          [
+            -7.3639619,
+            43.4292217
+          ],
+          [
+            -7.3639324,
+            43.4291204
+          ],
+          [
+            -7.363927,
+            43.4288418
+          ],
+          [
+            -7.3638385,
+            43.4287133
+          ],
+          [
+            -7.3637446,
+            43.4286139
+          ],
+          [
+            -7.3636481,
+            43.4285476
+          ],
+          [
+            -7.3634523,
+            43.4284347
+          ],
+          [
+            -7.3631734,
+            43.4285456
+          ],
+          [
+            -7.363101,
+            43.4285982
+          ],
+          [
+            -7.3630205,
+            43.4285048
+          ],
+          [
+            -7.3629991,
+            43.4284094
+          ],
+          [
+            -7.3629991,
+            43.428351
+          ],
+          [
+            -7.3631975,
+            43.428347
+          ],
+          [
+            -7.3631305,
+            43.4282029
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "etapa_catedral_fonte",
+        "etapa": 3,
+        "titulo": "3. Catedral e Fonte Vella",
+        "tipo": "precaucion",
+        "cor": "#d97706",
+        "estilo_lina": "tracos",
+        "desc": "Praza ampla e entrada adaptada á basílica. Desprazamento pola Rúa Álvaro Cunqueiro ata a Fonte Vella.",
+        "recomendacion": "A nave principal é accesible. Para ir á Fonte Vella recoméndase avanzar despacio pola rúa peonil.",
+        "pavimento": "Pedra histórica",
+        "pendente": "Moderada (4-5%)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -7.3631359,
+            43.428164
+          ],
+          [
+            -7.3631947,
+            43.4280159
+          ],
+          [
+            -7.3631063,
+            43.4278562
+          ],
+          [
+            -7.3629936,
+            43.4277277
+          ],
+          [
+            -7.3629051,
+            43.4276069
+          ],
+          [
+            -7.362875,
+            43.4275275
+          ],
+          [
+            -7.3628133,
+            43.4275406
+          ],
+          [
+            -7.3627637,
+            43.4275401
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "etapa_muinos",
+        "etapa": 4,
+        "titulo": "4. Paseo polo Barrio dos Muíños",
+        "tipo": "optimo",
+        "cor": "#16a34a",
+        "estilo_lina": "solida",
+        "desc": "Paseo chan xunto ás canles de auga e muíños restaurados dende o aparcadoiro accesible do barrio.",
+        "recomendacion": "Desprácese en coche (~3 min) e goce do fermoso paseo chan xunto ao río.",
+        "pavimento": "Asfalto e lousa continua",
+        "pendente": "Plano (< 1%)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -7.3592,
+            43.4265
+          ],
+          [
+            -7.35854,
+            43.42611
+          ],
+          [
+            -7.3578,
+            43.4258
+          ],
+          [
+            -7.3571,
+            43.4255
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tramo_evitar_salto_coro",
+        "etapa": 6,
+        "titulo": "⚠️ Treito a Evitar: Sendeiro do Salto do Coro (Ruta da Auga)",
+        "tipo": "evitar",
+        "cor": "#dc2626",
+        "estilo_lina": "puntos",
+        "desc": "Sendeiro de montaña con chanzos de rocha, barro, raíces e pasos moi estreitos.",
+        "recomendacion": "⛔ INACCESIBLE para mobilidade reducida. Totalmente desaconsellado.",
+        "pavimento": "Terra, rochas soltas e lama",
+        "pendente": "Desnivel abrupto con chanzos naturais"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -7.3595,
+            43.418
+          ],
+          [
+            -7.3575,
+            43.412
+          ],
+          [
+            -7.35551,
+            43.40605
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_1790715946346",
+        "titulo": "Baixada moi pendente",
+        "tipo": "evitar",
+        "cor": "#dc2626",
+        "estilo_lina": "puntos",
+        "desc": "Baixada moi pendente a evitar, usar a Avenida das San Lucas, paralela a esta, con paseos peonís, e pendente adecuada",
+        "recomendacion": "Baixada moi pendente superior ao 10%",
+        "pavimento": "Lousa / Pedra",
+        "pendente": "Plano (< 2%)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -7.368326,
+            43.4288708
+          ],
+          [
+            -7.3676825,
+            43.4288981
+          ],
+          [
+            -7.3674948,
+            43.4288825
+          ],
+          [
+            -7.3672219,
+            43.4288793
+          ],
+          [
+            -7.366823,
+            43.4289391
+          ],
+          [
+            -7.3661339,
+            43.4290442
+          ],
+          [
+            -7.3659623,
+            43.4290248
+          ],
+          [
+            -7.3659249,
+            43.4289757
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_1790716356667",
+        "titulo": "Acceso a soportais da Catedral",
+        "tipo": "precaucion",
+        "cor": "#d97706",
+        "estilo_lina": "tracos",
+        "desc": "Acceso a soportais da Catedral",
+        "recomendacion": "Acceso sen saída, só para acceso a Soportais",
+        "pavimento": "Pedra",
+        "pendente": "Plano (< 2%)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -7.3631549,
+            43.4281817
+          ],
+          [
+            -7.3632394,
+            43.4280668
+          ],
+          [
+            -7.3632689,
+            43.4279529
+          ],
+          [
+            -7.3632702,
+            43.4278887
+          ],
+          [
+            -7.3632649,
+            43.4278546
+          ],
+          [
+            -7.3633359,
+            43.4278526
+          ],
+          [
+            -7.3633627,
+            43.4279334
+          ],
+          [
+            -7.3633842,
+            43.4279636
+          ],
+          [
+            -7.3633989,
+            43.4280094
+          ],
+          [
+            -7.3634177,
+            43.4280882
+          ],
+          [
+            -7.3634378,
+            43.4281612
+          ],
+          [
+            -7.36347,
+            43.4282226
+          ],
+          [
+            -7.3634914,
+            43.4282644
+          ],
+          [
+            -7.3635209,
+            43.4283092
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_1790716581067",
+        "titulo": "Praza do Concello (peonil)",
+        "tipo": "optimo",
+        "cor": "#16a34a",
+        "estilo_lina": "solida",
+        "desc": "Praza do Concello (peonil)",
+        "recomendacion": "Pequenos desniveis, Centro Social con rampa de acceso, amplas terrazas",
+        "pavimento": "Lousa continua",
+        "pendente": "Plano (< 2%)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -7.3642275,
+            43.4294246
+          ],
+          [
+            -7.3641715,
+            43.4294767
+          ],
+          [
+            -7.3641279,
+            43.4295183
+          ],
+          [
+            -7.364052,
+            43.4296036
+          ],
+          [
+            -7.3639434,
+            43.4297214
+          ],
+          [
+            -7.3638817,
+            43.4297925
+          ],
+          [
+            -7.3637571,
+            43.4298947
+          ],
+          [
+            -7.3636967,
+            43.4299482
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_1790716726620",
+        "titulo": "Baixada alternativa a Catedral por Casa da Cultura",
+        "tipo": "optimo",
+        "cor": "#16a34a",
+        "estilo_lina": "solida",
+        "desc": "Baixada alternativa a Catedral por Casa da Cultura",
+        "recomendacion": "Baixada alternativa a Catedral por Casa da Cultura",
+        "pavimento": "Empedrado transitábel",
+        "pendente": "Plano (< 2%)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -7.3636873,
+            43.4299463
+          ],
+          [
+            -7.3635801,
+            43.4299083
+          ],
+          [
+            -7.3635533,
+            43.4298908
+          ],
+          [
+            -7.3634862,
+            43.4298061
+          ],
+          [
+            -7.3634031,
+            43.4296611
+          ],
+          [
+            -7.3632731,
+            43.4294089
+          ],
+          [
+            -7.3631288,
+            43.4291599
+          ],
+          [
+            -7.3630644,
+            43.4290606
+          ],
+          [
+            -7.3630537,
+            43.4289516
+          ],
+          [
+            -7.3630859,
+            43.4288796
+          ],
+          [
+            -7.3631797,
+            43.4287745
+          ],
+          [
+            -7.3632736,
+            43.4287044
+          ],
+          [
+            -7.3633808,
+            43.428644
+          ],
+          [
+            -7.3635095,
+            43.4286012
+          ],
+          [
+            -7.3636657,
+            43.4285621
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_1790716946634",
+        "titulo": "Baixada a Catedral por Convento",
+        "tipo": "precaucion",
+        "cor": "#2563eb",
+        "estilo_lina": "tracos",
+        "desc": "Pendente mais lixeira, empredrado transitábel",
+        "recomendacion": "Pendente mais lixeira, empredrado transitábel",
+        "pavimento": "Lousa continua",
+        "pendente": "Plano (< 2%)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -7.3659291,
+            43.4289637
+          ],
+          [
+            -7.3658567,
+            43.4288635
+          ],
+          [
+            -7.3658004,
+            43.4287622
+          ],
+          [
+            -7.3656851,
+            43.4286055
+          ],
+          [
+            -7.3656234,
+            43.4285306
+          ],
+          [
+            -7.3655242,
+            43.4284469
+          ],
+          [
+            -7.3654384,
+            43.4283894
+          ],
+          [
+            -7.3653968,
+            43.4283602
+          ],
+          [
+            -7.3651568,
+            43.4282999
+          ],
+          [
+            -7.3648498,
+            43.4283018
+          ],
+          [
+            -7.3648391,
+            43.4282522
+          ],
+          [
+            -7.3647734,
+            43.4281402
+          ],
+          [
+            -7.3647144,
+            43.4280263
+          ],
+          [
+            -7.3646595,
+            43.4279407
+          ],
+          [
+            -7.3646018,
+            43.4278832
+          ],
+          [
+            -7.3645509,
+            43.4278258
+          ],
+          [
+            -7.3645026,
+            43.4277985
+          ],
+          [
+            -7.3644248,
+            43.4278696
+          ],
+          [
+            -7.3643055,
+            43.4279815
+          ],
+          [
+            -7.364213,
+            43.4280575
+          ],
+          [
+            -7.3641312,
+            43.4281198
+          ],
+          [
+            -7.3639355,
+            43.428221
+          ],
+          [
+            -7.3636808,
+            43.4283398
+          ],
+          [
+            -7.3634676,
+            43.4284391
+          ]
+        ]
+      }
+    }
+  ]
+}

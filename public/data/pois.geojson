@@ -1,0 +1,275 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "alameda_remedios",
+        "nome": "Alameda de Os Remedios & Santuario",
+        "zona": "verde",
+        "zona_nome": "🟢 Zona Baixa e Accesible",
+        "categoria": "espazo_publico",
+        "acessibilidade": "yes",
+        "acessibilidade_desc": "Totalmente accesible (Ideal inicio)",
+        "etapa_itinerario": 1,
+        "itinerario_titulo": "Etapa 1: Inicio e Aparcadoiro",
+        "descricao": "Espazo totalmente chairo e aberto, ideal para comezar a visita. Conta cun acceso cómodo, zonas verdes de descanso e aparcadoiro adaptado para cadeiras de rodas.",
+        "piso": "Pavimento homoxéneo, asfalto pulido e terra compactada",
+        "pendente": "Plano / Moi suave (< 2%)",
+        "banheiro_adaptado": true,
+        "estacionamento_pmr": true,
+        "recomendacion": "Punto de inicio recomendado. Estacione aquí nas prazas reservadas PMR.",
+        "horario": "09:00 - 20:00 (Alameda 24h)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.369103730637675,
+          43.42882420192846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "catedral_asuncion",
+        "nome": "Catedral-Basílica da Asunción",
+        "zona": "amarelo",
+        "zona_nome": "🟡 Zona Monumental (Accesibilidade Parcial)",
+        "categoria": "monumento",
+        "acessibilidade": "limited",
+        "acessibilidade_desc": "Accesibilidade parcial",
+        "etapa_itinerario": 2,
+        "itinerario_titulo": "Etapa 2: Eixe Central e Visita Cultural",
+        "descricao": "A praza principal e a entrada principal ao templo son accesibles para cadeiras de rodas con rampla adaptada. Con todo, zonas interiores específicas como o claustro e o Museo Diocesano non contan con ramplas e presentan chanzos.",
+        "piso": "Lousa de pedra lisa na praza e nave central",
+        "pendente": "Suave na praza; rúas de acceso con empedrado tradicional",
+        "banheiro_adaptado": true,
+        "estacionamento_pmr": true,
+        "recomendacion": "Visitar a nave principal da Catedral. Percorrer a praza xunto á estatua de Álvaro Cunqueiro.",
+        "horario": "10:00 - 19:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.363061940733978,
+          43.428208688464046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "praza_catedral",
+        "nome": "Praza da Catedral e Estatua de Cunqueiro",
+        "zona": "amarelo",
+        "zona_nome": "🟡 Zona Monumental (Accesibilidade Parcial)",
+        "categoria": "espazo_publico",
+        "acessibilidade": "yes",
+        "acessibilidade_desc": "Totalmente accesible a cota cero",
+        "etapa_itinerario": 2,
+        "itinerario_titulo": "Etapa 2: Praza da Catedral",
+        "descricao": "Espazo peonil amplo con vistas á catedral e a emblemática escultura sentada de Álvaro Cunqueiro.",
+        "piso": "Lousa de pedra lisa",
+        "pendente": "Plano (< 2%)",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "recomendacion": "Excelente espazo aberto para descansar e contemplar o templo.",
+        "horario": "Aberto 24h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.363351636194039,
+          43.42840344316538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fonte_vella",
+        "nome": "A Fonte Vella",
+        "zona": "amarelo",
+        "zona_nome": "🟡 Zona Monumental (Accesibilidade Parcial)",
+        "categoria": "patrimonio",
+        "acessibilidade": "limited",
+        "acessibilidade_desc": "Accesible con precaución",
+        "etapa_itinerario": 3,
+        "itinerario_titulo": "Etapa 3: Patrimonio Histórico",
+        "descricao": "Situada moi preto da catedral. O acceso a pé pola rúa principal é directo, aínda que a contorna inmediata ten pavimento histórico empedrado que pode xerar vibración.",
+        "piso": "Pedra e empedrado tradicional",
+        "pendente": "Moderada (arredor do 4-5%)",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "recomendacion": "Acceso directo a pé dende a praza da Catedral pola rúa Álvaro Cunqueiro.",
+        "horario": "Aberto 24h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.362783777700091,
+          43.42745982234071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "casa_cunqueiro",
+        "nome": "Casa Natal de Álvaro Cunqueiro",
+        "zona": "amarelo",
+        "zona_nome": "🟡 Zona Monumental (Accesibilidade Parcial)",
+        "categoria": "cultura",
+        "acessibilidade": "limited",
+        "acessibilidade_desc": "Planta baixa accesible",
+        "descricao": "Casa natal de Álvaro Cunqueiro na Rúa Álvaro Cunqueiro. Planta baixa a nivel accesible; pisos superiores con escaleiras de madeira.",
+        "piso": "Madeira e pedra lisa",
+        "pendente": "Suave",
+        "banheiro_adaptado": true,
+        "estacionamento_pmr": false,
+        "recomendacion": "Visita interesante na rúa que une a Catedral coa Fonte Vella.",
+        "horario": "10:30 - 14:00, 16:30 - 19:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3625948,
+          43.4274152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "barrio_muinos",
+        "nome": "Barrio dos Muíños (Roteiro dos Artesáns)",
+        "zona": "verde",
+        "zona_nome": "🟢 Zona Baixa e Accesible",
+        "categoria": "patrimonio",
+        "acessibilidade": "yes",
+        "acessibilidade_desc": "Moi accesible no paseo fluvial",
+        "etapa_itinerario": 4,
+        "itinerario_titulo": "Etapa 4: Parada Artesanal e Canles",
+        "descricao": "Situado lixeiramente a fóra do núcleo principal, este fermoso barrio artesanal conta con entrada e zonas de aparcadoiro accesibles para PMR. É un percorrido moi visual e cómodo á beira do río e as canles.",
+        "piso": "Asfalto na chegada e lousa nas pontes/paseo fluvial",
+        "pendente": "Plano xunto á canle do río",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": true,
+        "recomendacion": "Recoméndase desprazarse en coche (~3 min) dende o centro e aparcar nas prazas accesibles do propio barrio.",
+        "horario": "Aberto 24h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3585411,
+          43.4261151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "concello_mondonedo",
+        "nome": "Casa do Concello de Mondoñedo",
+        "zona": "amarelo",
+        "zona_nome": "🟡 Zona Monumental (Accesibilidade Parcial)",
+        "categoria": "servizos",
+        "acessibilidade": "yes",
+        "acessibilidade_desc": "Planta baixa accesible",
+        "descricao": "Edificio consistorial na Rúa Alfonso VII con servizos municipais e atención cidadá na planta baixa adaptada con rampla.",
+        "piso": "Pedra lisa e granito",
+        "pendente": "Suave",
+        "banheiro_adaptado": true,
+        "estacionamento_pmr": true,
+        "recomendacion": "Punto de servizos e información municipal accesible.",
+        "horario": "09:00 - 14:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3636927,
+          43.4297801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pazo_san_isidro",
+        "nome": "Pazo de San Isidro",
+        "zona": "vermello",
+        "zona_nome": "🔴 Non Recomendado para PMR",
+        "categoria": "patrimonio",
+        "acessibilidade": "no",
+        "acessibilidade_desc": "Non adaptado / Pendente extrema",
+        "descricao": "O camiño de subida é moi empinado, sinuoso e non dispón de accesos nin baños adaptados para persoas con mobilidade reducida.",
+        "piso": "Estrada estreita con forte inclinación",
+        "pendente": "Moi pronunciada (> 14%)",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "recomendacion": "⚠️ Evitar a pé con cadeira de rodas ou carriños. Facer unicamente en vehículo adaptado.",
+        "horario": "Propiedade privada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3482,
+          43.4358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "salto_do_coro",
+        "nome": "Rutas Naturais (Salto do Coro / Ruta da Auga)",
+        "zona": "vermello",
+        "zona_nome": "🔴 Non Recomendado para PMR",
+        "categoria": "natureza",
+        "acessibilidade": "no",
+        "acessibilidade_desc": "Sendeiro natural inaccesible",
+        "descricao": "Sendeiros de terra e monte con pedras soltas, raíces, pasos estreitos e chanzos naturais non aptos para cadeiras de rodas nin carriños.",
+        "piso": "Terra, rochas e lama",
+        "pendente": "Desnivel de monte con tramos escarpados",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "recomendacion": "⛔ Non apto para mobilidade reducida nin carriños de nenos.",
+        "horario": "Acceso libre natural"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3555176,
+          43.4060538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ies_san_rosendo",
+        "nome": "IES Plurilingüe San Rosendo",
+        "zona": "verde",
+        "zona_nome": "🟢 Zona Baixa e Accesible",
+        "categoria": "cultura",
+        "acessibilidade": "yes",
+        "acessibilidade_desc": "Accesible / Ramplas e beirarrúas amplas",
+        "descricao": "Fundado no curso 1953/1954 como Instituto Laboral comarcal baixo a advocación de San Rosendo, iniciando as súas clases en xaneiro de 1954. Historicamente ligado á formación agropecuaria e técnica elemental, chegou a albergar gando propio para prácticas na histórica finca 'A Granxa' ata a década de 1970. Na actualidade é o centro de referencia comarcal en Educación Secundaria, Bacharelato e Formación Profesional (FP) agraria, forestal e agroxardinaría, destacando polo seu bosque comestible e proxectos de sustentabilidade.",
+        "piso": "Beirarrúas pavimentadas, asfalto homoxéneo e ramplas nos accesos",
+        "pendente": "Plano / Suave (< 3%)",
+        "banheiro_adaptado": true,
+        "estacionamento_pmr": true,
+        "recomendacion": "Acceso adaptado dende a Avenida As San Lucas con ramplas de entrada, portas amplas e prazas de aparcadoiro reservadas para PMR.",
+        "horario": "Luns a Venres: 08:30 - 14:30 (Tardes segundo ciclos)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.36830,
+          43.42806
+        ]
+      }
+    }
+  ]
+}

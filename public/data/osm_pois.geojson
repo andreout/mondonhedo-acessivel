@@ -1,0 +1,1721 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_492077422",
+        "osm_id": 492077422,
+        "nome": "El Peregrino",
+        "categoria": "hostaleria",
+        "tipo_osm": "pub",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "El Peregrino (pub).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.362878,
+          43.4285706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_848062121",
+        "osm_id": 848062121,
+        "nome": "Fonte dos Pelamios",
+        "categoria": "outros",
+        "tipo_osm": "drinking_water",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Fonte dos Pelamios (drinking_water).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3585863,
+          43.4256539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_1084217712",
+        "osm_id": 1084217712,
+        "nome": "Taberna O Valeco",
+        "categoria": "hostaleria",
+        "tipo_osm": "restaurant",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Taberna O Valeco (restaurant).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3586143,
+          43.425298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_1084264837",
+        "osm_id": 1084264837,
+        "nome": "Mindonet",
+        "categoria": "comercio",
+        "tipo_osm": "computer",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Mindonet (computer).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3639405,
+          43.4298223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_1084267939",
+        "osm_id": 1084267939,
+        "nome": "Pasteleria Val de Brea",
+        "categoria": "hostaleria",
+        "tipo_osm": "cafe",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Pasteleria Val de Brea (cafe).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3657643,
+          43.4289945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_1166295479",
+        "osm_id": 1166295479,
+        "nome": "Amencer",
+        "categoria": "hostaleria",
+        "tipo_osm": "cafe",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Amencer (cafe).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3610861,
+          43.4290185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_1289539632",
+        "osm_id": 1289539632,
+        "nome": "Servired",
+        "categoria": "finanzas",
+        "tipo_osm": "atm",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Servired (atm).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3636831,
+          43.4286201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_1289539717",
+        "osm_id": 1289539717,
+        "nome": "Tuscosas.net",
+        "categoria": "comercio",
+        "tipo_osm": "yes",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Tuscosas.net (yes).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3639613,
+          43.4297519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_1289539740",
+        "osm_id": 1289539740,
+        "nome": "Abanca",
+        "categoria": "finanzas",
+        "tipo_osm": "bank",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Abanca (bank).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3639457,
+          43.4294096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_1289539749",
+        "osm_id": 1289539749,
+        "nome": "Biblioteca Pública José Trapero Pardo",
+        "categoria": "outros",
+        "tipo_osm": "library",
+        "visible": true,
+        "acessibilidade": "no",
+        "descricao": "Biblioteca Pública José Trapero Pardo (library).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3636682,
+          43.4285179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_1318766063",
+        "osm_id": 1318766063,
+        "nome": "A Cova",
+        "categoria": "hostaleria",
+        "tipo_osm": "pub",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "A Cova (pub).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3636306,
+          43.4284218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_1404743757",
+        "osm_id": 1404743757,
+        "nome": "Casa Natal de Manuel Leiras Pulpeiro",
+        "categoria": "outros",
+        "tipo_osm": "yes",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Casa Natal de Manuel Leiras Pulpeiro (yes).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3654847,
+          43.4284788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954067",
+        "osm_id": 3446954067,
+        "nome": "Adegas Nistal",
+        "categoria": "comercio",
+        "tipo_osm": "wine",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Adegas Nistal (wine).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3585586,
+          43.4268981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954068",
+        "osm_id": 3446954068,
+        "nome": "Adegas Nistal",
+        "categoria": "comercio",
+        "tipo_osm": "deli",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Adegas Nistal (deli).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3618789,
+          43.4274981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954069",
+        "osm_id": 3446954069,
+        "nome": "AgroCosta",
+        "categoria": "comercio",
+        "tipo_osm": "garden_centre",
+        "visible": true,
+        "acessibilidade": "limited",
+        "descricao": "AgroCosta (garden_centre).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3589127,
+          43.4269879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954070",
+        "osm_id": 3446954070,
+        "nome": "Alvite",
+        "categoria": "comercio",
+        "tipo_osm": "books",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Alvite (books).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3633241,
+          43.4285506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954071",
+        "osm_id": 3446954071,
+        "nome": "Arquivo Diocesano de Mondoñedo",
+        "categoria": "outros",
+        "tipo_osm": "library",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Arquivo Diocesano de Mondoñedo (library).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3629315,
+          43.4277463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954072",
+        "osm_id": 3446954072,
+        "nome": "Banco Santander",
+        "categoria": "finanzas",
+        "tipo_osm": "bank",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Banco Santander (bank).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3642991,
+          43.4293809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954073",
+        "osm_id": 3446954073,
+        "nome": "Bar Novo da Fonte Vella",
+        "categoria": "hostaleria",
+        "tipo_osm": "pub",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Bar Novo da Fonte Vella (pub).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.363272,
+          43.4275727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954074",
+        "osm_id": 3446954074,
+        "nome": "Carlos",
+        "categoria": "outros",
+        "tipo_osm": "car_wash",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Carlos (car_wash).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3586289,
+          43.4269185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954075",
+        "osm_id": 3446954075,
+        "nome": "Casa Natal de Álvaro Cunqueiro Mora",
+        "categoria": "outros",
+        "tipo_osm": "information",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Casa Natal de Álvaro Cunqueiro Mora (information).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3625948,
+          43.4274152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954076",
+        "osm_id": 3446954076,
+        "nome": "Confitería La Alianza",
+        "categoria": "hostaleria",
+        "tipo_osm": "cafe",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Confitería La Alianza (cafe).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3639023,
+          43.4287439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954077",
+        "osm_id": 3446954077,
+        "nome": "Ferretería Castañal",
+        "categoria": "comercio",
+        "tipo_osm": "hardware",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Ferretería Castañal (hardware).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3629959,
+          43.4276905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954079",
+        "osm_id": 3446954079,
+        "nome": "O Bodegón da Catedral",
+        "categoria": "hostaleria",
+        "tipo_osm": "pub",
+        "visible": true,
+        "acessibilidade": "no",
+        "descricao": "O Bodegón da Catedral (pub).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3633999,
+          43.428688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954080",
+        "osm_id": 3446954080,
+        "nome": "O Rei das Tartas",
+        "categoria": "hostaleria",
+        "tipo_osm": "cafe",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "O Rei das Tartas (cafe).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3635237,
+          43.4282503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954081",
+        "osm_id": 3446954081,
+        "nome": "Oficina de Turismo de Mondoñedo",
+        "categoria": "outros",
+        "tipo_osm": "information",
+        "visible": true,
+        "acessibilidade": "no",
+        "descricao": "Oficina de Turismo de Mondoñedo (information).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3636376,
+          43.4284977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954082",
+        "osm_id": 3446954082,
+        "nome": "Orlando Cruz",
+        "categoria": "sanidade",
+        "tipo_osm": "doctors",
+        "visible": true,
+        "acessibilidade": "no",
+        "descricao": "Orlando Cruz (doctors).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3581358,
+          43.426677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954083",
+        "osm_id": 3446954083,
+        "nome": "Perruquería Vero",
+        "categoria": "comercio",
+        "tipo_osm": "hairdresser",
+        "visible": true,
+        "acessibilidade": "yes",
+        "descricao": "Perruquería Vero (hairdresser).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3589145,
+          43.4267923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954084",
+        "osm_id": 3446954084,
+        "nome": "Peluquería Oriola",
+        "categoria": "comercio",
+        "tipo_osm": "hairdresser",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Peluquería Oriola (hairdresser).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3625859,
+          43.427366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954085",
+        "osm_id": 3446954085,
+        "nome": "Regina",
+        "categoria": "comercio",
+        "tipo_osm": "antiques",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Regina (antiques).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3631889,
+          43.4285961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954087",
+        "osm_id": 3446954087,
+        "nome": "Claudio",
+        "categoria": "comercio",
+        "tipo_osm": "supermarket",
+        "visible": true,
+        "acessibilidade": "no",
+        "descricao": "Claudio (supermarket).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3605236,
+          43.4276553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954088",
+        "osm_id": 3446954088,
+        "nome": "Talleres Chao",
+        "categoria": "comercio",
+        "tipo_osm": "motorcycle",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Talleres Chao (motorcycle).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3583081,
+          43.4267568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3446954091",
+        "osm_id": 3446954091,
+        "nome": "Loterías y Apuestas del Estado",
+        "categoria": "comercio",
+        "tipo_osm": "lottery",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Loterías y Apuestas del Estado (lottery).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3637446761131296,
+          43.42855844008841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3450961224",
+        "osm_id": 3450961224,
+        "nome": "AMK Super Mondoñedo",
+        "categoria": "comercio",
+        "tipo_osm": "supermarket",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "AMK Super Mondoñedo (supermarket).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Mo-Sa 09:30-14:00, 16:30-21:00; Su 09:30-14:00",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3646973,
+          43.4285015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3450991493",
+        "osm_id": 3450991493,
+        "nome": "O Rincón de Mondoñedo",
+        "categoria": "hostaleria",
+        "tipo_osm": "pub",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "O Rincón de Mondoñedo (pub).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3646826,
+          43.4295419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3450991693",
+        "osm_id": 3450991693,
+        "nome": "Héctor",
+        "categoria": "hostaleria",
+        "tipo_osm": "pub",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Héctor (pub).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3641281,
+          43.4302594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3450991793",
+        "osm_id": 3450991793,
+        "nome": "Cadena100",
+        "categoria": "comercio",
+        "tipo_osm": "variety_store",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Cadena100 (variety_store).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3638939,
+          43.4303235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3450991794",
+        "osm_id": 3450991794,
+        "nome": "Joysa",
+        "categoria": "comercio",
+        "tipo_osm": "shoes",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Joysa (shoes).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3638573,
+          43.4302681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3450991893",
+        "osm_id": 3450991893,
+        "nome": "Tropicana",
+        "categoria": "aloxamento",
+        "tipo_osm": "hostel",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Tropicana (hostel).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3637354,
+          43.4301263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3450991894",
+        "osm_id": 3450991894,
+        "nome": "Don Zapato",
+        "categoria": "comercio",
+        "tipo_osm": "shoes",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Don Zapato (shoes).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3634645,
+          43.4298725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3450991993",
+        "osm_id": 3450991993,
+        "nome": "La Librería",
+        "categoria": "comercio",
+        "tipo_osm": "books",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "La Librería (books).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3641566,
+          43.4295828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3452239998",
+        "osm_id": 3452239998,
+        "nome": "Abadía",
+        "categoria": "hostaleria",
+        "tipo_osm": "bar",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Abadía (bar).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3695711,
+          43.4281446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3470397394",
+        "osm_id": 3470397394,
+        "nome": "Carnicería Pacio y Fraiz",
+        "categoria": "comercio",
+        "tipo_osm": "butcher",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Carnicería Pacio y Fraiz (butcher).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3592275,
+          43.4280845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3470397395",
+        "osm_id": 3470397395,
+        "nome": "Supermercado Onda",
+        "categoria": "comercio",
+        "tipo_osm": "supermarket",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Supermercado Onda (supermarket).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Mo-Su 09:00-14:00; Mo-Sa 16:00-21:00",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3599221,
+          43.4297529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_3812270061",
+        "osm_id": 3812270061,
+        "nome": "La Tienda",
+        "categoria": "comercio",
+        "tipo_osm": "supermarket",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "La Tienda (supermarket).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3611814,
+          43.4324879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_4822379625",
+        "osm_id": 4822379625,
+        "nome": "A Horta da Paula",
+        "categoria": "hostaleria",
+        "tipo_osm": "restaurant",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "A Horta da Paula (restaurant).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3635021,
+          43.4296483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_4830549681",
+        "osm_id": 4830549681,
+        "nome": "TecnoCousas",
+        "categoria": "comercio",
+        "tipo_osm": "computer",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "TecnoCousas (computer).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.358605,
+          43.4257343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_4958524821",
+        "osm_id": 4958524821,
+        "nome": "A Tasca",
+        "categoria": "hostaleria",
+        "tipo_osm": "pub",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "A Tasca (pub).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3657674,
+          43.4282173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_5586715538",
+        "osm_id": 5586715538,
+        "nome": "Fonte das Coruxeiras",
+        "categoria": "outros",
+        "tipo_osm": "drinking_water",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Fonte das Coruxeiras (drinking_water).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.373288,
+          43.4252556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_6194827387",
+        "osm_id": 6194827387,
+        "nome": "Albergue Público de Peregrinos de Mondoñedo",
+        "categoria": "aloxamento",
+        "tipo_osm": "hostel",
+        "visible": true,
+        "acessibilidade": "yes",
+        "descricao": "Albergue Público de Peregrinos de Mondoñedo (hostel).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "13:00-22:00",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3662158,
+          43.4277957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_6328622443",
+        "osm_id": 6328622443,
+        "nome": "Panadería Crespo",
+        "categoria": "comercio",
+        "tipo_osm": "bakery",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Panadería Crespo (bakery).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3687267,
+          43.4281315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_7260522901",
+        "osm_id": 7260522901,
+        "nome": "A Bodeguiña",
+        "categoria": "hostaleria",
+        "tipo_osm": "pub",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "A Bodeguiña (pub).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.364507,
+          43.4296386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_7689337568",
+        "osm_id": 7689337568,
+        "nome": "Camino de Estrellas",
+        "categoria": "aloxamento",
+        "tipo_osm": "hotel",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Camino de Estrellas (hotel).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3638394,
+          43.4286228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_7810113851",
+        "osm_id": 7810113851,
+        "nome": "Pulpería Suso",
+        "categoria": "hostaleria",
+        "tipo_osm": "restaurant",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Pulpería Suso (restaurant).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3621771,
+          43.4275074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_7810113854",
+        "osm_id": 7810113854,
+        "nome": "Camiño de Santiago",
+        "categoria": "outros",
+        "tipo_osm": "information",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Camiño de Santiago (information).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3628779,
+          43.4276088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_7810113859",
+        "osm_id": 7810113859,
+        "nome": "Hiper Bazar",
+        "categoria": "comercio",
+        "tipo_osm": "variety_store",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Hiper Bazar (variety_store).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3592556,
+          43.4272697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_9108033817",
+        "osm_id": 9108033817,
+        "nome": "Peluquería Enredos",
+        "categoria": "comercio",
+        "tipo_osm": "hairdresser",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Peluquería Enredos (hairdresser).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3691455,
+          43.4282422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_9294673464",
+        "osm_id": 9294673464,
+        "nome": "O Miradoiro",
+        "categoria": "patrimonio",
+        "tipo_osm": "viewpoint",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "O Miradoiro (viewpoint).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3719583,
+          43.4238238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_11007372478",
+        "osm_id": 11007372478,
+        "nome": "Benvidos a Mondoñedo",
+        "categoria": "outros",
+        "tipo_osm": "information",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Benvidos a Mondoñedo (information).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3719694,
+          43.4275261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_11007698017",
+        "osm_id": 11007698017,
+        "nome": "Loterías y Apuestas del Estado",
+        "categoria": "comercio",
+        "tipo_osm": "lottery",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Loterías y Apuestas del Estado (lottery).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3644326,
+          43.4297703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_11808403436",
+        "osm_id": 11808403436,
+        "nome": "Museo Diocesano e Catedralicio de Mondoñedo",
+        "categoria": "patrimonio",
+        "tipo_osm": "museum",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Museo Diocesano e Catedralicio de Mondoñedo (museum).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3625263,
+          43.4280301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_11849822015",
+        "osm_id": 11849822015,
+        "nome": "Xistrail Mountain",
+        "categoria": "comercio",
+        "tipo_osm": "outdoor",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Xistrail Mountain (outdoor).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3635022,
+          43.4282106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_12061863569",
+        "osm_id": 12061863569,
+        "nome": "O Palique",
+        "categoria": "hostaleria",
+        "tipo_osm": "restaurant",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "O Palique (restaurant).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3638235,
+          43.4295578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_12351526441",
+        "osm_id": 12351526441,
+        "nome": "Escola de Música Municipal O Pallarego",
+        "categoria": "outros",
+        "tipo_osm": "music_school",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Escola de Música Municipal O Pallarego (music_school).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3637826,
+          43.4297471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_13094701701",
+        "osm_id": 13094701701,
+        "nome": "O Petisco",
+        "categoria": "hostaleria",
+        "tipo_osm": "restaurant",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "O Petisco (restaurant).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3641953,
+          43.429533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm_13545207040",
+        "osm_id": 13545207040,
+        "nome": "Albergue Lumen",
+        "categoria": "aloxamento",
+        "tipo_osm": "hostel",
+        "visible": true,
+        "acessibilidade": "unknown",
+        "descricao": "Albergue Lumen (hostel).",
+        "piso": "Non especificado",
+        "pendente": "Non especificada",
+        "banheiro_adaptado": false,
+        "estacionamento_pmr": false,
+        "horario": "Consultar",
+        "fonte": "OpenStreetMap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.36284,
+          43.428826
+        ]
+      }
+    }
+  ]
+}
