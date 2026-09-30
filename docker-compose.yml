@@ -5,11 +5,11 @@ services:
     container_name: mondonhedo_acessivel
     restart: unless-stopped
     ports:
-      - "90:8000"
+      - "90:80"
     environment:
       # ⚠️ SEGURIDADE: Poña ENABLE_EDIT_MODE a "false" en produción para bloquear calquera modificación
       - ENABLE_EDIT_MODE=true
-      - PORT=8000
+      - PORT=80
       - PYTHONUNBUFFERED=1
     volumes:
       - ./public:/app/public

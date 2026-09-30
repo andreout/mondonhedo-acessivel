@@ -11,7 +11,7 @@ from datetime import datetime
 sys.stdout.reconfigure(line_buffering=True)
 sys.stderr.reconfigure(line_buffering=True)
 
-PORT = int(os.environ.get("PORT", 8000))
+PORT = int(os.environ.get("PORT", 80))
 ENABLE_EDIT_MODE = os.environ.get("ENABLE_EDIT_MODE", "false").lower() in ("true", "1", "yes")
 
 PUBLIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public")
