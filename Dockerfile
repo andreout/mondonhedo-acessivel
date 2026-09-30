@@ -13,7 +13,7 @@ COPY public/ ./public/
 
 EXPOSE 8000
 
-HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
-  CMD wget --no-verbose --tries=1 --spider http://localhost:${PORT}/healthz || exit 1
+HEALTHCHECK --interval=15s --timeout=3s --start-period=3s --retries=3 \
+  CMD python3 -c "import urllib.request, os; urllib.request.urlopen('http://127.0.0.1:' + os.environ.get('PORT', '8000') + '/healthz', timeout=2)" || exit 1
 
 CMD ["python3", "server.py"]
