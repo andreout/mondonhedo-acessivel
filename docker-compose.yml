@@ -8,9 +8,9 @@ services:
       - "8000"
     environment:
       # ⚠️ SEGURIDADE: Poña ENABLE_EDIT_MODE a "false" en produción para bloquear calquera modificación
-      - ENABLE_EDIT_MODE: ${ENABLE_EDIT_MODE:-false}
-      - PORT: ${PORT:-8000}
-      - PYTHONUNBUFFERED: 1
+      - ENABLE_EDIT_MODE=${ENABLE_EDIT_MODE:-false}
+      - PORT=${PORT:-8000}
+      - PYTHONUNBUFFERED=1
     volumes:
       - ./public:/app/public
       - ./server.py:/app/server.py
